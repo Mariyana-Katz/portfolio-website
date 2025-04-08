@@ -1,0 +1,44 @@
+//adding custom css for the navbar button
+
+.navbar .btn-outline-light:hover {
+    color: var(--bs-dark);
+}
+
+.navbar-sticky{
+   opacity: 0.9; /*slightly transparent*/
+   box-shadow: 0 0 10px rgba(0,0,0,0.5); /*add a soft shadow*/
+
+}
+
+//transition for the navbar fade in 5 sec
+.navbar{
+    transition: all 0.5s ease-in-out;
+}
+
+//background image for the header
+.header {
+    background: url(../images/header-background.jpg) center center no-repeat;
+    background-size:cover;
+}
+
+.modal-dialog{
+    max-width: 1040px;
+}
+//to center the image and text when the screen is medium size
+@media(max-width: 1000px){
+    .hero .image-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .text-container {
+        text-align: center;
+    }
+}
+
+.icons {
+    background-color: #f3f6f9; /* Make sure it matches the SVG fill */
+  }
+
+
+  
