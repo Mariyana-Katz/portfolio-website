@@ -24,6 +24,11 @@
 .modal-dialog{
     max-width: 1040px;
 }
+
+.download{
+  background: url('../images/download-background.jpg') center center no-repeat;  
+  background-size: cover;
+}
 //to center the image and text when the screen is medium size
 @media(max-width: 1000px){
     .hero .image-container{
