@@ -66,3 +66,21 @@
 .about-img {
   width: 200px;
 }
+
+/* give a shadow to the link */
+.link {
+  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
+}
+
+.btn {
+  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
+}
+
+.modal-content {
+  background-color: rgb(252, 244, 250);
+}
+
+#newsapp1Modal {
+  text-align: center;
+  padding-left: 60px;
+}
