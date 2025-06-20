@@ -76,6 +76,7 @@
   filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
 }
 
+/* give a shadow to the button */
 .btn {
   filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
 }
