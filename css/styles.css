@@ -4,6 +4,10 @@
   background-attachment: fixed;
 }
 
+/* Add a dark overlay on top of the .header element using a pseudo-element.
+   This helps improve text readability over background images.
+   The ::after element covers the entire header with a semi-transparent black layer.
+*/
 .header::after {
   content: "";
   position: absolute;
@@ -22,6 +26,11 @@
   font-family: "lora-regular", serif;
 }
 
+/* When the user hovers over a .project element:
+   - Slightly enlarge it for a zoom effect (scale to 105%)
+   - Apply a smooth transition over 0.5 seconds
+   - Make it slightly transparent (opacity 0.8)
+*/
 .project:hover {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
@@ -48,6 +57,28 @@
   z-index: 10;
 }
 
+/* give a shadow to the link */
+.link {
+  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
+}
+
+.btn {
+  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
+}
+
+.modal-content {
+  background-color: rgb(252, 244, 250);
+}
+
+#newsapp1Modal {
+  text-align: center;
+  padding-left: 60px;
+}
+
+/* Responsive design:
+   When the screen width is 768px or smaller (like tablets or phones),
+   reduce the icon size inside .header .social to 30px for better mobile display.
+*/
 @media (max-width: 768px) {
   .header .social i {
     font-size: 30px;
@@ -65,22 +96,4 @@
 
 .about-img {
   width: 200px;
-}
-
-/* give a shadow to the link */
-.link {
-  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
-}
-
-.btn {
-  filter: drop-shadow(10px 10px 10px rgba(240, 42, 134, 0.733));
-}
-
-.modal-content {
-  background-color: rgb(252, 244, 250);
-}
-
-#newsapp1Modal {
-  text-align: center;
-  padding-left: 60px;
 }
